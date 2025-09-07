@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+
+# Build directories
+target/
+build/
+out/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
