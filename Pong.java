@@ -67,7 +67,7 @@
 		 
 		 
 		 // Ball image
-		 ImageIcon icon = new ImageIcon("ball.png");
+		 ImageIcon icon = new ImageIcon("assets/ball.png");
 		 ballImage = new JLabel(icon);
 		 ballImage.setBounds(getFieldWidth()/2, getFieldHeight()/2, ball.getWidth(), ball.getHeight());
 		 add(ballImage);
@@ -107,7 +107,7 @@
 		 // Ball movement
 		 if(ball.getY() >= getFieldHeight()-ball.getHeight() || ball.getY() <= 0){
 			 ball.bounceWall();
-			 SoundPlayer.playSound("wall.wav");
+			 SoundPlayer.playSound("assets/wall.wav");
 		 }
 		 if ((ball.collides(p1) && ball.getDx() < 0) || (ball.collides(p2) && ball.getDx() > 0)) {
 			// Get the paddle involved in the collision
@@ -127,10 +127,10 @@
 		
 			// Play sound and toggle active player
 			if (activePlayer) {
-				SoundPlayer.playSound("pong1.wav");
+				SoundPlayer.playSound("assets/pong1.wav");
 				activePlayer = !activePlayer;
 			} else {
-				SoundPlayer.playSound("pong2.wav");
+				SoundPlayer.playSound("assets/pong2.wav");
 				activePlayer = !activePlayer;
 			}
 		}
@@ -146,7 +146,7 @@
 			 activePlayer = !activePlayer;
 			 if(p2Score == 5){ // Player 2 winning
 				 ball.stopBall();
-				 SoundPlayer.playSound("idk.wav");
+				 SoundPlayer.playSound("assets/idk.wav");
 				 AfterGameMessage("Player 2 won!  Rematch?");
 			 }
 		 }
@@ -159,7 +159,7 @@
 			 activePlayer = !activePlayer;
 			 if(p1Score == 5){ // Player 1 winning
 				 ball.stopBall();
-				 SoundPlayer.playSound("idk.wav");
+				 SoundPlayer.playSound("assets/idk.wav");
 				 AfterGameMessage("Player 1 won!  Rematch?");
 			 }
 		 }
