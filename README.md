@@ -113,8 +113,7 @@ This code is protected under the GNU General Public License (Copyleft), 2005 by 
 ## 👨‍💻 Author
 
 **Sepehr Khodadadi**  
-Modified: November 20, 2024  
-Student ID: 440017524
+Modified: November 20, 2024
 
 ## 🤝 Contributing
 
